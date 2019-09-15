@@ -1,0 +1,7 @@
+#!/bin/bash
+#rsync -rv --progress --dry-run /Volumes/Movies/ /Volumes/Movies\ Backup
+rsync -a --progress /Volumes/Movies\ Backup/ /Volumes/Movies
+#rsync -rv --progress --dry-run /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
+rsync -a --progress /Volumes/Amy\ Jo\'s\ Backup/ /Volumes/Amy\ Jo\'s\ Drive
+#rsync -rv --progress --dry-run /Volumes/Joe\'s\ Backup /Volumes/Joe\'s\ Drive/
+rsync -a --progress /Volumes/Joe\'s\ Backup/ /Volumes/Joe\'s\ Drive
