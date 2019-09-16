@@ -342,7 +342,7 @@ prompt_segment() {
   if [[ $CURRENT_FG != 'NONE' && $2 != $CURRENT_FG ]]; then
     echo -n " $SEGMENT_SEPARATOR%{$fg%} "
   else
-    echo -n "%{$fg%} "
+    echo -n "%{$fg%}"
   fi
   CURRENT_FG=$2
   [[ -n $3 ]] && echo -n $3
