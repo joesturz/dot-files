@@ -97,6 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+autoload -U compinit
+compinit
+
 alias ls="ls -lG"
 alias about="archey"
 alias emacs="/usr/local/Cellar/emacs/26.2/bin/emacs-26.2 -nw"
