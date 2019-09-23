@@ -22,11 +22,11 @@ if [ ! -n "${BULLETTRAIN_PROMPT_ORDER+1}" ]; then
     status
     # custom
     virtualenv
+    # ruby
     context
     dir
     # screen
     # perl
-    # ruby
     # nvm
     # aws
     # go
@@ -171,7 +171,7 @@ if [ ! -n "${BULLETTRAIN_RUBY_BG+1}" ]; then
   BULLETTRAIN_RUBY_BG=red
 fi
 if [ ! -n "${BULLETTRAIN_RUBY_FG+1}" ]; then
-  BULLETTRAIN_RUBY_FG=white
+  BULLETTRAIN_RUBY_FG=196
 fi
 if [ ! -n "${BULLETTRAIN_RUBY_PREFIX+1}" ]; then
   BULLETTRAIN_RUBY_PREFIX=♦️
