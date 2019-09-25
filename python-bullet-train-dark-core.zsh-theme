@@ -25,7 +25,7 @@ if [ ! -n "${BULLETTRAIN_PROMPT_ORDER+1}" ]; then
     # ruby
     context
     dir
-    # screen
+    screen
     # perl
     # nvm
     # aws
