@@ -25,7 +25,7 @@ if [ ! -n "${BULLETTRAIN_PROMPT_ORDER+1}" ]; then
     # ruby
     context
     dir
-    # screen
+    screen
     # perl
     # nvm
     # aws
@@ -280,7 +280,7 @@ else
   ZSH_THEME_GIT_PROMPT_RENAMED=$BULLETTRAIN_GIT_RENAMED
 fi
 if [ ! -n "${BULLETTRAIN_GIT_UNMERGED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_UNMERGED=" %F{196}═%F{063}"
+  ZSH_THEME_GIT_PROMPT_UNMERGED=" %F{red}═%F{063}"
 else
   ZSH_THEME_GIT_PROMPT_UNMERGED=$BULLETTRAIN_GIT_UNMERGED
 fi
