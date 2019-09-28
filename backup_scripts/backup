@@ -6,4 +6,4 @@ rsync -a --progress /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
 #rsync -rv --progress --dry-run /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
 #rsync -a --progress /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
 #rsync -rv --progress --dry-run --exclude /Backups.backupdb/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
-rsync -a --progress --exclude /Backups.backupdb/ --exclude /.Spotlight-V100/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
+rsync -a --progress --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.photoslibrary/ --exclude /.Spotlight-V100/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
