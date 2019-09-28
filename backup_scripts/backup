@@ -1,9 +1,11 @@
 #!/bin/bash
 #rsync -rv --progress --dry-run /Volumes/Movies/ /Volumes/Movies\ Backup
-rsync -a --progress /Volumes/Movies/ /Volumes/Movies\ Backup
+rsync -Pha /Volumes/Movies/ /Volumes/Movies\ Backup
 #rsync -rv --progress --dry-run /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
-rsync -a --progress /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
+rsync -Pha /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
 #rsync -rv --progress --dry-run /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
-#rsync -a --progress /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
+#rsync -Pha /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
 #rsync -rv --progress --dry-run --exclude /Backups.backupdb/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
-rsync -a --progress --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.photoslibrary/ --exclude /.Spotlight-V100/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
+rsync -Pha --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.photoslibrary/ --exclude /.Spotlight-V100/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
+#rsync -Phca --dry-run --delete --stats --include="/Volumes/Joe's Drive/Photos Library.photoslibrary/" --include="/Volumes/Joe's Drive/Photos Library.photoslibrary/***" /Volumes/Joe\'s\ Backup/Pictures
+rsync -Phca --delete --stats --include="/Volumes/Joe's Drive/Photos Library.photoslibrary/" --include="/Volumes/Joe's Drive/Photos Library.photoslibrary/***" /Volumes/Joe\'s\ Backup/Pictures
