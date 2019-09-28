@@ -1,0 +1,20 @@
+alias ls="ls -lG"
+alias about="archey"
+alias torrent="transmission-cli"
+alias backup="/Users/Joe/Documents/backup"
+alias restore="/Users/Joe/Documents/restore"
+alias rhb="launchctl unload ~/Library/LaunchAgents/com.homebridge.server.plist && launchctl load ~/Library/LaunchAgents/com.homebridge.server.plist"
+alias stophb="launchctl unload ~/Library/LaunchAgents/com.homebridge.server.plist"
+alias starthb="launchctl load ~/Library/LaunchAgents/com.homebridge.server.plist"
+alias startvpn="sudo launchctl load -w /Library/LaunchDaemons/vpn.ppp.l2tp.plist && checkvpn"
+alias stopvpn="sudo launchctl unload -w /Library/LaunchDaemons/vpn.ppp.l2tp.plist"
+alias checkvpn="launchctl print system/vpn.ppp.l2tp | grep running"
+alias sb="source ~/.bash_profile"
+alias getMovieList="{ find '/Volumes/Movies/Movies' -name '*.m4v' -o -name '*.mp4' -o -name '*.mov' -o -name '*.mkv' -o -name '*.avi' -type f ; find '/Volumes/Movies/R Rated Movies/Movies' -name '*.m4v' -o -name '*.mp4' -o -name '*.mov' -o -name '*.mkv' -o -name '*.avi' -type f ; find '/Volumes/Movies/Kids Movies/Movies' -name '*.m4v' -o -name '*.mp4' -o -name '*.mov' -o -name '*.mkv' -o -name '*.avi' -type f ; } > ~/Desktop/all_movies.txt ;"
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[34m\]\w\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+export CLICOLOR=1
+#export PS1="\h:\W \u\$"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
