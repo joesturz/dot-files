@@ -20,4 +20,4 @@ rsync -Pha --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.phot
 echo "Running Photos Sync"
 # rsync -Phca --delete --stats --include="/Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/" --include="/Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/*" /Volumes/Joe\'s\ Backup/Pictures2
 # rsync -Phca --dry-run --delete --stats /Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/ /Volumes/Joe\'s\ Backup/Pictures
-rsync -Phca --delete --stats /Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/ /Volumes/Joe\'s\ Backup/Pictures
+rsync -Phca --delete --stats /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures
