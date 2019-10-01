@@ -8,7 +8,7 @@ echo "Running Amy Jo's Drive Backup"
 #rsync -rv --progress --dry-run /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
 rsync -Pha --exclude /.Spotlight-V100/ /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
 
-echo "Running Music Backup"
+#echo "Running Music Backup"
 #rsync -rv --progress --dry-run /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
 #rsync -Pha /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
 
