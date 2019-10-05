@@ -24,4 +24,4 @@ echo "Running Photos Sync" >> ~/.backup_log
 rsync -Phca --delete /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures >> ~/.backup_log
 end=`date +%s`
 runtime=$((end-start))
-"Total time (in sec) to backup: $runtime" >> ~/.backup_log
+echo "Total time (in sec) to backup: $runtime" >> ~/.backup_log
