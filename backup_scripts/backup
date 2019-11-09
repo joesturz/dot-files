@@ -3,11 +3,11 @@ start=`date +%s`
 date >> ~/.backup_log
 echo "Running Backup"
 #rsync -rv --progress --dry-run /Volumes/Movies/ /Volumes/Movies\ Backup
-rsync -Pha --exclude /.Spotlight-V100/ /Volumes/Movies/ /Volumes/Movies\ Backup #>> ~/.backup_log
+rsync -Phaq --exclude /.Spotlight-V100/ /Volumes/Movies/ /Volumes/Movies\ Backup #>> ~/.backup_log
 
 #echo "Running Amy Jo's Drive Backup" >> ~/.backup_log
 #rsync -rv --progress --dry-run /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup
-rsync -Pha --exclude /.Spotlight-V100/ /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup #>> ~/.backup_log
+rsync -Phaq --exclude /.Spotlight-V100/ /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\ Jo\'s\ Backup #>> ~/.backup_log
 
 #echo "Running Music Backup"
 #rsync -rv --progress --dry-run /Volumes/Joe\'s\ Mac\ mini\ HDD/Music /Volumes/Joe\'s\ Drive
@@ -15,13 +15,15 @@ rsync -Pha --exclude /.Spotlight-V100/ /Volumes/Amy\ Jo\'s\ Drive/ /Volumes/Amy\
 
 #echo "Running Joe's Drive Backup" >> ~/.backup_log
 #rsync -rv --progress --dry-run --exclude /Backups.backupdb/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup
-rsync -Pha --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.photoslibrary/ --exclude /.Spotlight-V100/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup #>> ~/.backup_log
+rsync -Phaq --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.photoslibrary/ --exclude /.Spotlight-V100/ /Volumes/Joe\'s\ Drive/ /Volumes/Joe\'s\ Backup #>> ~/.backup_log
 #rsync -Phca --dry-run --delete --stats --include="/Volumes/Joe's Drive/Photos Library.photoslibrary/" --include="/Volumes/Joe's Drive/Photos Library.photoslibrary/***" /Volumes/Joe\'s\ Backup/Pictures
 
 #echo "Running Photos Sync" >> ~/.backup_log
 # rsync -Phca --delete --stats --include="/Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/" --include="/Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/*" /Volumes/Joe\'s\ Backup/Pictures2
 # rsync -Phca --dry-run --delete --stats /Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/ /Volumes/Joe\'s\ Backup/Pictures
-rsync -Phca --delete /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures #>> ~/.backup_log
+
+rsync -Phcaq --delete /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures #>> ~/.backup_log
+>>>>>>> Stashed changes
 #echo "Sync Complete" >> ~/.backup_log
 end=`date +%s`
 runtime=$((end-start))
