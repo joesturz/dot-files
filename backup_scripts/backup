@@ -1,6 +1,6 @@
 #!/bin/bash
-start=`date +%s`
-date >> ~/.backup_log
+starttime=`date +%s`
+echo "$date"
 echo "Running Backup"
 #rsync -rv --progress --dry-run /Volumes/Movies/ /Volumes/Movies\ Backup
 rsync -Phaq --exclude /.Spotlight-V100/ /Volumes/Movies/ /Volumes/Movies\ Backup #>> ~/.backup_log
@@ -23,8 +23,8 @@ rsync -Phaq --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.pho
 # rsync -Phca --dry-run --delete --stats /Volumes/Joe\'s\ Drive/Pictures/Photos\ Library.photoslibrary/ /Volumes/Joe\'s\ Backup/Pictures
 
 rsync -Phcaq --delete /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures #>> ~/.backup_log
->>>>>>> Stashed changes
+
 #echo "Sync Complete" >> ~/.backup_log
 end=`date +%s`
-runtime=$((end-start))
+runtime=$((end-starttime))
 echo "Total time (in sec) to backup: $runtime"
