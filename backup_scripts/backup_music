@@ -1,7 +1,7 @@
 #!/bin/bash
 #rsync -rv --progress --dry-run /Users/Joe/Music/iTunes/iTunes\ Music/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Mac\ mini\ HDD/Music/iTunes/iTunes\ Music/"
-rsync -a --progress --exclude="/Downloads/" /Users/Joe/Music/iTunes/iTunes\ Music/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Mac\ mini\ HDD/Music/iTunes/iTunes\ Music/"
-# rsync -a --progress --exclude="/Downloads/" /Users/Joe/Music/iTunes/iTunes\ Music/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Drive/Music/"
+# rsync -a --progress --exclude="/Downloads/" /Users/Joe/Music/iTunes/iTunes\ Music/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Mac\ mini\ HDD/Music/iTunes/iTunes\ Music/"
+rsync -a --progress --exclude="/Downloads/" /Users/Joe/Music/iTunes/iTunes\ Music/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Drive/Music/"
 #rsync -rv --progress --dry-run /Users/Joe/Documents/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Drive/Documents/"
 rsync -a --progress /Users/Joe/Documents/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Drive/Documents/"
 #rsync -rv --progress --dry-run /Users/Joe/Pictures/ "joe@joesturz.no-ip.biz:/Volumes/Joe\'s\ Drive/Pictures/"
