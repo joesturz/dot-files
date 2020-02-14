@@ -1,6 +1,8 @@
 [user]
 	name = Joe Sturzenegger
 	email = joesturz84@gmail.com
+[credential]
+  helper = osxkeychain
 [core]
 	excludesfile = /Users/Joe/.gitignore_global
 [difftool "sourcetree"]
