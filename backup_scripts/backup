@@ -15,7 +15,7 @@ rsync -Phaq --exclude /Backups.backupdb/ --exclude /Pictures/Photos\ Library.pho
 
 echo "Picture backup started at:"
 echo `date +%T`
-rsync -Phcaq --delete /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures
+rsync -Phaq --delete /Volumes/Joe\'s\ Drive/Pictures/ /Volumes/Joe\'s\ Backup/Pictures
 
 echo "Backup ended at:"
 echo `date`
