@@ -120,4 +120,6 @@ alias stop_eb="deactivate"
 alias dc="docker-compose"
 
 #iOS
+
 alias rebuild_d="carthage bootstrap --platform iOS --use-ssh"
+alias rebuild_c="carthage bootstrap --platform iOS --use-ssh --cache-builds"
