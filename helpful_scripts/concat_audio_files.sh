@@ -3,8 +3,15 @@
 # ----- Notes -----
 # checkout https://helpful.wiki/ffmpeg/ for more ffmpeg helps
 # 
-# Remove all spaces and unusual characters from the file names
+# IMPORTANT: to ensure the correct order of the files
+# 
 # Remove all spaces and unusual characters from the current folder name
+# Remove all spaces and unusual characters from the file names
+# 
+# run: 
+#   ls -1 *.m4a | sed 's/^/file /g' > 'files.txt' 
+# and inspect the files.txt file
+
 
 NAME=${PWD##*/}
 
