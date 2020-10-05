@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/users_home_folder_name_here/.oh-my-zsh"
+export ZSH="/Users/Joe/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -101,4 +101,13 @@ autoload -U compinit
 compinit
 
 alias ls="ls -lG"
+alias about="archey"
+alias emacs="/usr/local/Cellar/emacs/26.2/bin/emacs-26.2 -nw"
+alias emacs_old="/usr/bin/emacs"
+alias repos="cd /Users/Joe/Documents/Repositories"
+alias backup="/Users/Joe/Documents/backup_music"
+alias backup_local="/Users/Joe/Documents/backup_music_local"
 alias sz="source ~/.zshrc"
+alias remote="ssh Joe@joesturz.no-ip.biz"
+alias local_server="ssh Joe@192.168.86.64"
+alias mr_carson="ssh joe@192.168.86.96"
