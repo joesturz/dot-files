@@ -8,3 +8,4 @@ cp Themes/NeonNight.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColor
 
 brew cask install shiftit
 brew install archey
+brew install htop
