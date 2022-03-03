@@ -111,5 +111,6 @@ alias sz="source ~/.zshrc"
 alias remote="ssh Joe@joesturz.no-ip.biz"
 alias local_server="ssh Joe@192.168.86.64"
 alias mr_carson="ssh joe@192.168.86.96"
+alias doc_space="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
 # copy current branch to clipboard
 alias cb="git branch --show-current | pbcopy"

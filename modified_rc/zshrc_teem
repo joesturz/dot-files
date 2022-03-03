@@ -119,6 +119,7 @@ alias start_eb="workon eb"
 alias stop_eb="deactivate"
 alias dc="docker-compose"
 alias cb="git branch --show-current | pbcopy"
+alias doc_space="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
 #iOS
 
 alias rebuild_d="carthage bootstrap --platform iOS --use-ssh"
