@@ -35,12 +35,12 @@ brew install wget
 brew install carthage
 
 # cask install
-brew cask install shiftit
-brew cask install dozer
-brew cask install iina
-brew cask install vscodium
-brew cask install proxyman
-brew cask install sourcetree
-brew cask install telegram
-brew cask install bitwarden
-brew cask install slack
+brew install --cask shiftit
+brew install --cask dozer
+brew install --cask iina
+brew install --cask vscodium
+brew install --cask proxyman
+brew install --cask sourcetree
+brew install --cask telegram
+brew install --cask bitwarden
+brew install --cask slack
