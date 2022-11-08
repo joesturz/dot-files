@@ -44,3 +44,7 @@ brew install --cask sourcetree
 brew install --cask telegram
 brew install --cask bitwarden
 brew install --cask slack
+brew install --cask monitorcontrol
+brew install --cask appcleaner
+brew install --cask mactracker
+brew install --cask fanny
