@@ -29,10 +29,12 @@ brew install archey
 brew install htop
 brew install bat
 brew install ffmpeg
-brew install tldr
 brew install tmux
 brew install wget
 brew install carthage
+#these both do similar things, cheat is more cusomizable, tldr highlights better
+brew install cheat
+brew install tldr
 
 # cask install
 brew install --cask shiftit
