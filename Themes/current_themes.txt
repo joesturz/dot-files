@@ -1,0 +1,5 @@
+Oh My ZSH - bullet-train-dark-core.zsh-theme
+Slack - slack_theme
+Terminal - DarkCore Nue.terminal
+Xcode - NeonNIght UHD.xccolortheme
+
