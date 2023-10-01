@@ -1,0 +1,35 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf2 Having just done the same thing, I can say that the previous replies are not fully accurate. Neither Carbon Copy Cloner nor SuperDuper! support cloning NTFS-formatted drives/partitions. So neither will be able to clone your Boot Camp partition.\
+\
+Here's what I used...\
+* SSD (mine was a Mercury Extreme Pro from OWC, their site has good tutorial videos if you want to see how to do everything)\
+* External Enclosure\
+* #00 Phillips Screwdriver\
+* Torx T6 Screwdriver\
+* Carbon Copy Cloner for the Mac side (free)\
+* Casper 6.0 for the Windows side (not free)\
+\
+Here's what I did...\
+1) Put my new SSD in the external enclosure\
+2) Used Disk Utility in OS X to format the SSD (the usual.. Mac OS Extended, Journaled)\
+3) Used Carbon Copy Cloner to clone my internal HDD Mac partition to the external SSD\
+4) Booted into OS X on the now-cloned new SSD drive (I swapped the drives to boot the SSD internally rather than via USB 2.0 for better performance, but you can boot it while still in the external enclosure. In fact that's a good way to verify the clone job worked. Just hold down option while powering up the computer and select the external SSD.)\
+5) Used Boot Camp Assistant to create the NTFS Boot Camp Partition on the new SSD. (Make sure it has enough capacity to receive all of the contents from your old HDD Boot Camp partition.)\
+6) Booted into Windows on the old HDD. (NOTE: Windows can't boot from the external enclosure, so if you swapped the drives in step 4 like I did, you'll need to swap them back so that the HDD is once again internal.)\
+7) Used Casper 6.0 to clone my to clone my internal HDD Windows partition to the external SSD\
+8) Used Casper Explorer within Casper 6 to apply a Windows master boot record to the now-cloned Windows partition and mark the partition as active. (NOTE: Your Windows partition will not be bootable unless you do this.. their faq explains everything.)\
+9) Swapped the hard drives so that the SSD was now internal.\
+\
+And voila.. both OS X and and Windows booted successfully, and obviously much faster than they had previously. As an added, unexpected bonus, I didn't even need to reactivate Windows despite the hardware change.\
+\
+As a final step worth mentioning, your old HDD in the external enclosure is an obvious great choice for a backup drive. You can set up scheduled clone jobs for both Carbon Copy Cloner and Casper. This will maintain a backup that is fully dual-bootable, should disaster strike (SSD failing, laptop stolen, etc.)\
+\
+Hope this helps.. I couldn't find a clear posting on how to do this when I figured everything out last month.\
+\
+Good luck!}
