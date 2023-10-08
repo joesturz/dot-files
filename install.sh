@@ -35,6 +35,8 @@ brew install carthage
 #these both do similar things, cheat is more cusomizable, tldr highlights better
 brew install cheat
 brew install tldr
+brew install xcodesorg/made/xcodes
+brew install aria2  #for faster downloads with xcodes
 
 # cask install
 brew install --cask shiftit
