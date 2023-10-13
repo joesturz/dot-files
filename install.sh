@@ -14,8 +14,15 @@ echo "https://github.com/DanielStormApps/Fanny"
 echo "https://plexamp.com/#downloads"
 echo "https://github.com/MonitorControl/MonitorControl#readme"
 
-echo find you Xcode version here
+echo "find you Xcode version here or use xcodes(see below)"
 echo "https://developer.apple.com/download/all/"
+
+echo install these apps for working with video files
+
+echo "https://handbrake.fr"
+echo "https://www.makemkv.com/download/"
+echo "MakeMKV beta key: https://forum.makemkv.com/forum/viewtopic.php?t=1053"
+echo "https://subler.org"
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 cp vimrc ~/.vimrc
@@ -42,6 +49,7 @@ brew install aria2  #for faster downloads with xcodes
 brew install --cask shiftit
 brew install --cask dozer
 brew install --cask iina
+brew install --cask vlc
 brew install --cask vscodium
 brew install --cask proxyman
 brew install --cask sourcetree
