@@ -32,7 +32,7 @@ cp Themes/oh_my_zsh/bullet-train-dark-core.zsh-theme ~/.oh-my-zsh/custom/themes/
 cp Themes/Xcode/NeonNight.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/NeonNight.xccolortheme
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install archey
+brew install archey4
 brew install htop
 brew install bat
 brew install ffmpeg
@@ -44,6 +44,9 @@ brew install cheat
 brew install tldr
 brew install xcodesorg/made/xcodes
 brew install aria2  #for faster downloads with xcodes
+brew install youtube-dl
+brew install speedtest_cli
+brew install tree
 
 # cask install
 brew install --cask shiftit
@@ -60,3 +63,4 @@ brew install --cask monitorcontrol
 brew install --cask appcleaner
 brew install --cask mactracker
 brew install --cask fanny
+brew install --cask qmk-toolbox
