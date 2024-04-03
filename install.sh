@@ -30,6 +30,8 @@ cp zshrc ~/.zshrc
 cp bash_profile ~/.bash_profile
 cp Themes/oh_my_zsh/bullet-train-dark-core.zsh-theme ~/.oh-my-zsh/custom/themes/bullet-train-dark-core.zsh-theme
 cp Themes/Xcode/NeonNight.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/NeonNight.xccolortheme
+cp Themes/Xcode/NeonNight_UHD_16.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/NeonNight_UHD_16.xccolortheme
+cp Themes/Xcode/NeonNight_UHD_20.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/NeonNight_UHD_20.xccolortheme
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install archey4
