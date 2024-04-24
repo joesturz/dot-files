@@ -49,6 +49,7 @@ brew install aria2  #for faster downloads with xcodes
 brew install youtube-dl
 brew install speedtest_cli
 brew install tree
+brew install miller #parsing and creating data files(json, csv, tsv)
 
 # cask install
 brew install --cask shiftit
