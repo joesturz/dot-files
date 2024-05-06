@@ -7,10 +7,6 @@ if [ ! -d "$DIRECTORY" ]; then
     read temp 
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
-<<<<<<< HEAD
-=======
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
->>>>>>> master
     cp vimrc ~/.vimrc
     cp zshrc ~/.zshrc
     cp bash_profile ~/.bash_profile
