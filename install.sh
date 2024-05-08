@@ -49,7 +49,7 @@ else
     brew install --cask mactracker
     brew install --cask fanny
     brew install --cask qmk-toolbox
-
+    brew install --cask rectangle
 
     echo install the following from the app store
     echo "AppStore apps"
