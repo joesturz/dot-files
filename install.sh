@@ -32,9 +32,13 @@ else
     brew install speedtest_cli
     brew install tree
     brew install miller #parsing and creating data files(json, csv, tsv)
+    # mas is used to script install mac app store apps
+    # for use see https://github.com/mas-cli/mas
+    brew install mas 
+
 
     # cask install
-    brew install --cask shiftit
+    # brew install --cask shiftit, use rectangle instead
     brew install --cask dozer
     brew install --cask iina
     brew install --cask vlc
