@@ -70,6 +70,9 @@ ZSH_THEME="bullet-train-dark-core"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
+# ADD THIS IF YOUR PROMPT IS BROKEN
+# zstyle ':omz:alpha:lib:git' async-prompt no
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
