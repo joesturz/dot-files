@@ -32,9 +32,13 @@ else
     brew install speedtest_cli
     brew install tree
     brew install miller #parsing and creating data files(json, csv, tsv)
+    # mas is used to script install mac app store apps
+    # for use see https://github.com/mas-cli/mas
+    brew install mas 
+
 
     # cask install
-    brew install --cask shiftit
+    # brew install --cask shiftit, use rectangle instead
     brew install --cask dozer
     brew install --cask iina
     brew install --cask vlc
@@ -49,7 +53,7 @@ else
     brew install --cask mactracker
     brew install --cask fanny
     brew install --cask qmk-toolbox
-
+    brew install --cask rectangle
 
     echo install the following from the app store
     echo "AppStore apps"

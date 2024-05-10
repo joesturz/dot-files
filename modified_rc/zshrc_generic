@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Joe/.oh-my-zsh"
+export ZSH="/Users/joesturz/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -105,15 +105,8 @@ compinit
 
 alias ls="ls -lG"
 alias about="archey"
-alias emacs="/usr/local/Cellar/emacs/26.2/bin/emacs-26.2 -nw"
-alias emacs_old="/usr/bin/emacs"
-alias repos="cd /Users/Joe/Documents/Repositories"
-alias backup="/Users/Joe/Documents/backup_music"
-alias backup_local="/Users/Joe/Documents/backup_music_local"
+alias repos="cd /Users/joesturz/Repositories"
 alias sz="source ~/.zshrc"
-alias remote="ssh Joe@joesturz.no-ip.biz"
-alias local_server="ssh Joe@192.168.86.64"
-alias mr_carson="ssh joe@192.168.86.96"
 alias doc_space="defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'; killall Dock"
 # copy current branch to clipboard
 alias cb="git branch --show-current | pbcopy"
