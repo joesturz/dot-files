@@ -32,6 +32,7 @@ else
     brew install speedtest_cli
     brew install tree
     brew install miller #parsing and creating data files(json, csv, tsv)
+    brew install jordanbaird-ice #menu bar manager
     # mas is used to script install mac app store apps
     # for use see https://github.com/mas-cli/mas
     brew install mas 
@@ -39,7 +40,8 @@ else
 
     # cask install
     # brew install --cask shiftit, use rectangle instead
-    brew install --cask dozer
+    # brew install --cask dozer, use jordanbaird-ice instead
+    # brew install --cask fanny, no support for apple silicon
     brew install --cask iina
     brew install --cask vlc
     brew install --cask vscodium
@@ -51,11 +53,10 @@ else
     brew install --cask monitorcontrol
     brew install --cask appcleaner
     brew install --cask mactracker
-    brew install --cask fanny
     brew install --cask qmk-toolbox
     brew install --cask rectangle
 
-    echo install the following from the app store
+    echo "install the following from the app store" # update this section using mas
     echo "AppStore apps"
     echo "Amphetamine"
     echo "AppCleaner"
