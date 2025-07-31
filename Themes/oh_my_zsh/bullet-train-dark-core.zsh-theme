@@ -404,6 +404,10 @@ function git_prompt_status() {
   local status_prompt
   for status_constant in $status_constants; do
     if (( ${+statuses_seen[$status_constant]} )); then
+      # If we have both staged and unstaged changes, skip individual ADDED and MODIFIED
+      if [[ ${+statuses_seen[BOTH_STAGED_AND_UNSTAGED]} -eq 1 && ($status_constant == "ADDED" || $status_constant == "MODIFIED") ]]; then
+        continue
+      fi
       local next_display=$constant_prompt_map[$status_constant]
       status_prompt="$next_display$status_prompt"
     fi
